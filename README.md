@@ -8,13 +8,17 @@ Challenge Execises-Performance session 3- Thursday Jun 3rd 2021
 
 -Currently the folder contains the following request:
 
-"testCreateTask": "artillery run CreateATask.yml",
-"testGetActiveTask": "artillery run GetAnActiveTask.yml",
-"testUpdateTask": "artillery run UpdateTask.yml",
-"testCompleteTask": "artillery run ChangeToComplete.yml",
-"testReopenTask": "artillery run ReopenTask.yml",
-"testDeleteTask": "artillery run DeleteTask.yml"
+
+  "testCreateTask": "artillery run CreateATask.yml",
+  "testGetActiveTask": "artillery run GetAnActiveTask.yml",
+  "testUpdateTask": "artillery run UpdateTask.yml",
+  "testCompleteTask": "artillery run ChangeToComplete.yml",
+  "testReopenTask": "artillery run ReopenTask.yml",
+  "testDeleteTask": "artillery run DeleteTask.yml"
+
+
 *Intructions:
+
 
 1.- need to create a folder : mkdir <folder_name>
 
@@ -34,11 +38,13 @@ Challenge Execises-Performance session 3- Thursday Jun 3rd 2021
 "ChangeToComplete.yml",
 "ReopenTask.yml",
 "DeleteTask.yml"
+
+
 7.- to Run the files one by one
 
-npm run testCreateTask
-npm run testGetActiveTask
-npm run testUpdateTask
-npm run testCompleteTask
-npm run testReopenTask
-npm run testDeleteTask
+  npm run testCreateTask
+  npm run testGetActiveTask
+  npm run testUpdateTask
+  npm run testCompleteTask
+  npm run testReopenTask
+  npm run testDeleteTask
