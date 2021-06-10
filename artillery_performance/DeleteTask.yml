@@ -1,0 +1,29 @@
+config:
+  target: "https://api.todoist.com"
+  phases:
+    - duration: 1
+      arrivalRate: 1
+      name: "Delete Task"
+  defaults:
+    headers:
+      Authorization: Bearer 27698838c9e21df1aea4e5bd28a722c50b738097 #{{ $processEnvironment.token }}
+      Content-Type: application/json
+  variables:
+    url_tasks:
+      - "/rest/v1/tasks"
+    task_name:
+      - "My task is deleted-Adri"
+scenarios:
+  - name: "Delete my task Task"
+    flow:
+    - post:
+        url: "{{ url_tasks }}"
+        json:
+          content: "{{ task_name }}"
+        capture:
+          json: "$.id"
+          as: "id_task"
+    - log: "Task Name '{{ task_name }}' Task id: {{ id_task }}"
+    - delete: 
+        url: "{{ url_tasks }}/{{ id_task }}"
+    - log: "Delete Task with id: {{ id_task }}"

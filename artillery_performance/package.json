@@ -1,0 +1,25 @@
+{
+  "name": "artillery-performance",
+  "version": "1.0.0",
+  "description": "This is my Challenge for session 3 - Performance Testing",
+  "main": "index.js",
+  "scripts": {
+    "testCreateTask": "artillery run CreateATask.yml",
+    "testGetActiveTask": "artillery run GetAnActiveTask.yml",
+    "testUpdateTask": "artillery run UpdateTask.yml",
+    "testCompleteTask": "artillery run ChangeToComplete.yml",
+    "testReopenTask": "artillery run ReopenTask.yml",
+    "testDeleteTask": "artillery run DeleteTask.yml"
+
+
+
+    
+
+  },
+  "keywords": [],
+  "author": "Adriana Trejo",
+  "license": "ISC",
+  "devDependencies": {
+    "artillery": "^1.7.2"
+  }
+}
